@@ -1,0 +1,10 @@
+SELECT [Id]
+      ,[Title]
+      ,[Description]
+      ,[BackdropImage]
+      ,[TotalVotes]
+      ,[PollType]
+      ,[Category]
+      ,[Status]
+FROM [dbo].[BenchmarkPoll]
+WHERE [Id] = @Id AND [IsDeleted] = 0
